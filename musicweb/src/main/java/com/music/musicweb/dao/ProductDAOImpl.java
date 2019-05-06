@@ -23,6 +23,7 @@ public class ProductDAOImpl implements ProductDAO {
 		{
 		Session session=sessionFactory.getCurrentSession();
 		session.save(product);
+		System.out.println("Added");
 		return true;
 		}
 		catch(Exception e)
